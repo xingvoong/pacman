@@ -22,5 +22,12 @@ and reinforcement learning through the game Pacman.
 	- A new evaluation:
 		-the distance from the pacmac new position to the foods
 		- 1/distance as a new heuristic
+-Pacman 3:
+	- Implemented model-based and model-free reinforcement learning algorithms; value iteration and Q-learning. 
+	- Tested the agents first on Gridworld (from class)
+	- Then apply them to a simulated robot controller (Crawler) and Pacman.
+	- Main files:
+		valueIterationAgents.py: A value iteration agent for solving known MDPs.
+		qlearningAgents.py: Q-learning agents for Gridworld, Crawler and Pacman.
 	
 
