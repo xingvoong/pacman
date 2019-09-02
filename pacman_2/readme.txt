@@ -1,0 +1,5 @@
+- Still the Pacman, but include ghosts now.
+- Implemented both minimax and expectimax search.
+- A new evaluation:
+	-the distance from the pacmac new position to the foods
+	- 1/distance as a new heuristic
