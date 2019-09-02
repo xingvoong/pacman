@@ -60,9 +60,7 @@ class ValueIterationAgent(ValueEstimationAgent):
         self.runValueIteration()
 
     def runValueIteration(self):
-        # Write value iteration code here
-        "*** YOUR CODE HERE ***"
-
+       
         for i in range(self.iterations):
             vState = util.Counter()  
             for state in self.mdp.getStates():
@@ -87,7 +85,6 @@ class ValueIterationAgent(ValueEstimationAgent):
           Compute the Q-value of action in state from the
           value function stored in self.values.
         """
-        "*** YOUR CODE HERE ***"
         qValue = 0
         for nextState, prob in self.mdp.getTransitionStatesAndProbs(state, action):
           reward = self.mdp.getReward(state, action, nextState)
@@ -103,7 +100,6 @@ class ValueIterationAgent(ValueEstimationAgent):
           there are no legal actions, which is the case at the
           terminal state, you should return None.
         """
-        "*** YOUR CODE HERE ***"
       
         #maxValue = float('inf')
         #bestAct = None
@@ -153,7 +149,7 @@ class AsynchronousValueIterationAgent(ValueIterationAgent):
         ValueIterationAgent.__init__(self, mdp, discount, iterations)
 
     def runValueIteration(self):
-      "*** YOUR CODE HERE ***"
+      
       for i in range(self.iterations):
         vState = util.Counter()
         state = self.mdp.getStates()[i% len(self.mdp.getStates())]
@@ -184,7 +180,7 @@ class PrioritizedSweepingValueIterationAgent(AsynchronousValueIterationAgent):
 
 
     def runValueIteration(self):
-        "*** YOUR CODE HERE ***"
+       
         #Compute predecessors of all states
         # a set of predecessors 
         predecessors = {}
