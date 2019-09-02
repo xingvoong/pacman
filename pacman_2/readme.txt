@@ -1,4 +1,5 @@
-- Still the Pacman, but include ghosts now.
+- Pacman world is modeled as both an adversarial and a stochastic search problem, still the Pacman, but include ghosts now.
+- Main file: multiAgents.py:  multi-agent search agents
 - Implemented both minimax and expectimax search.
 - A new evaluation:
 	-the distance from the pacmac new position to the foods
